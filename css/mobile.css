@@ -25,7 +25,9 @@
 
   .info-section img {
     max-width: 95vw;
+    height: 270px;
   }
+  
   .section-ip img {
     display: none;
   }
