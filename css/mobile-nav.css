@@ -217,12 +217,11 @@ body.open:after {
   @media screen and (width < 725px) {
     .market-container {
       justify-content: center;
-      margin: auto;
     }
     
     .product {
       width: 80% !important;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
   }
 }
