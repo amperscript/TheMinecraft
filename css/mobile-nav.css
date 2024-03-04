@@ -220,7 +220,8 @@ body.open:after {
       margin: auto;
     }
     .product {
-      width: 60%;
+      width: 80% !important;
+      margin-bottom: 10px;
     }
   }
 }
