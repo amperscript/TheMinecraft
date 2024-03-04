@@ -571,7 +571,7 @@ button img {
 .product {
   width: 20%;
   background: #ffffff;
-  margin-right: 1.65rem;
+  margin: 10px;
   border-radius: 5px;
   margin-bottom: 2rem;
   padding: 1rem;
