@@ -217,6 +217,7 @@ body.open:after {
   @media screen and (width < 725px) {
     .market-container {
       justify-content: center;
+      margin: auto;
     }
     .product {
       width: 60%;
