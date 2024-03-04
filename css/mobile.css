@@ -274,6 +274,6 @@
 
 @media screen and (width < 383px) {
   .product {
-    width: 400px;
+    width: 80% !important;
   }
 }
