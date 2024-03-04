@@ -221,6 +221,7 @@ body.open:after {
     }
     .product {
       width: 60%;
+      margin: auto;
     }
   }
 }
