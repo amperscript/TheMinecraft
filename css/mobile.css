@@ -178,9 +178,11 @@
     max-width: none;
   }
 
-  .product:last-child {
+  .product{
     margin-right: 20px;
+    margin-left: 20px;
   }
+
 
   .market-lable p {
     font-size: 18px;
