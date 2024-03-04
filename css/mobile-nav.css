@@ -1,0 +1,231 @@
+body.open,
+body:after {
+  overflow: hidden;
+}
+.b-nav,
+body:after {
+  position: absolute;
+  right: 0;
+}
+
+body:after {
+  background: white;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  top: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  width: 100%;
+}
+body.open:after {
+  z-index: 10;
+  opacity: 0.65;
+  height: 100000%;
+  visibility: visible;
+}
+
+.b-nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.b-nav .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.b-nav li {
+  margin-bottom: 30px;
+}
+
+.b-nav li:last-child {
+  margin-bottom: 0px;
+}
+
+.b-nav li a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 700;
+}
+
+.b-nav {
+  background: #fff none repeat scroll 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 12;
+}
+.b-nav:not(.open) {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+.b-nav {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+.b-nav ul {
+  padding-left: 0px;
+}
+.b-nav li {
+  list-style-type: none;
+}
+/* .b-nav li:not(.open) {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+.b-nav li:not(.open),
+.b-nav.open li {
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+} */
+.b-nav li:first-child {
+  margin-top: 0px;
+}
+.b-nav.open {
+  visibility: visible;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.b-nav:not(.open) {
+  visibility: hidden;
+  animation-duration: 0.4s;
+  animation-fill-mode: backwards;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+.b-nav.open li {
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+.b-link {
+  background: 0 0;
+  border-left: rgba(255, 255, 255, 0) solid 2px;
+  color: #fff;
+  transition: all 0.4s ease;
+  width: auto;
+}
+.b-link,
+.b-menu {
+  -webkit-transition: all 0.4s ease;
+}
+
+.b-menu {
+  cursor: pointer;
+  display: none;
+  height: 66px;
+  padding-top: 25px;
+  position: relative;
+  top: -20px;
+  transition: all 0.4s ease 0s;
+  width: 43px;
+  z-index: 12;
+  right: 10px;
+}
+.b-bun--bottom,
+.b-bun--mid,
+.b-bun--top {
+  height: 2px;
+  width: 25px;
+}
+.b-container.open .b-main,
+.b-menu:hover {
+}
+.b-bun {
+  background: #000;
+  transition: all 0.4s ease;
+}
+.b-brand,
+.b-bun {
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+}
+.b-bun--top {
+  top: 0;
+}
+.b-bun--mid {
+  top: 8px;
+}
+.b-bun--bottom {
+  top: 16px;
+}
+.b-container {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.b-container:hover:not(.open) .bun-bottom,
+.b-container:hover:not(.open) .bun-mid,
+.b-container:hover:not(.open) .bun-top {
+  background: #2196f3;
+}
+.b-container.open .b-bun--top {
+  background: #e00a12;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.b-container.open .b-bun--mid {
+  opacity: 0;
+}
+.b-container.open .b-bun--bottom {
+  background: #e00a12;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.b-container.open .b-brand {
+  color: #fff;
+}
+
+@media screen and (width < 803px) {
+  .b-menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (width < 665px) {
+  .big-block {
+    width: 400px;
+  }
+
+  @media screen and (width < 725px) {
+    .market-container {
+      justify-content: center;
+    }
+    .product {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (width < 1295px) {
+  .form {
+    margin-top: -20px;
+  }
+}
