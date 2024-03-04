@@ -122,7 +122,8 @@
 @media screen and (width < 695px) {
   .part-1,
   .part-2 {
-    font-size: 3.5vw !important;
+    font-size: 4.5vw !important;
+    max-width: 100% !important;
   }
 }
 
