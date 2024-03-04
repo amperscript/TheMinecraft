@@ -15,6 +15,17 @@
     align-items: center;
   }
 
+  .part-1 {
+    margin-bottom: 30px;
+  }
+
+  .part-2 {
+    margin-bottom: 40px;
+  }
+
+  .info-section img {
+    max-width: 95vw;
+  }
   .section-ip img {
     display: none;
   }
@@ -157,6 +168,17 @@
   /* .container_2 {
     height: 500px;
   } */
+
+  .container_2 {
+    max-width: none;
+  }
+  .container {
+    max-width: none;
+  }
+
+  .product:last-child {
+    margin-right: 20px;
+  }
 
   .market-lable p {
     font-size: 18px;
